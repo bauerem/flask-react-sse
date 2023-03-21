@@ -1,0 +1,3 @@
+/api/.gitignore
+/client/.gitignore
+*/**/__pycache__
