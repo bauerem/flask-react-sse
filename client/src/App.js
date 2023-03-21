@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState('Initializing...');
 
   useEffect(() => {
-    const sse = new EventSource('http://localhost:5000/stream')
+    const sse = new EventSource('http://localhost:5000/api/stream')
 
     function handleStream(e) {
       console.log(e)
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>The last streaned item was : {data}</p>      
+        <p>The time is : {data}</p>      
       </header>
     </div>
   );
